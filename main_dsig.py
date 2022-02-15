@@ -1,11 +1,4 @@
-from dbms.DBmssql import MSSQL
-from settings.Sstk import KOSPI
 from data_manage import *
-
-import openpyxl as op
-import pandas as pd
-
-from datetime import datetime, timedelta
 
 
 if __name__ == "__main__":
