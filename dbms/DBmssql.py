@@ -1,3 +1,4 @@
+from cfgr.private import Private
 import pymssql
 import pandas as pd
 import numpy as np
@@ -22,7 +23,7 @@ class MSSQL:
         cls.instance = cls.__get_instance
         return cls.__instance
 
-    def __init__(self, ip="172.29.1.6"):
+    def __init__(self, ip=Private.server_ip):
         self.address = ip
 
     def login(self, **kwargs):
