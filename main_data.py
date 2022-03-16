@@ -9,11 +9,13 @@ if __name__ == "__main__":
     else:
         dt = (datetime.today() - timedelta(days=1)).strftime('%Y%m%d')
 
+    holiday = 0
     if datetime.now().strftime('%A') == 'Monday':
         # Find Friday
         dt = (datetime.today() - timedelta(days=3)).strftime('%Y%m%d')
-
-
+    elif holiday > 0:
+        # Find Day Before the Holiday
+        dt = (datetime.today() - timedelta(days=(holiday + 1))).strftime('%Y%m%d')
 
     cd.xl_cell_input(
         start_date=dt,
