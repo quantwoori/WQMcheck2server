@@ -1,2 +1,2 @@
 *.xlsx
-./cfgr
+./cfgr/private.py
