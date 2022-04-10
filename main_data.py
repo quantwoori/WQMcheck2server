@@ -16,7 +16,7 @@ if __name__ == "__main__":
     elif holiday > 0:
         # Find Day Before the Holiday
         dt = (datetime.today() - timedelta(days=(holiday + 1))).strftime('%Y%m%d')
-
+    print(dt)
     cd.xl_cell_input(
         start_date=dt,
         end_date=dt,
