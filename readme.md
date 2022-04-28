@@ -22,6 +22,21 @@
     Also CheckExpert+ is not binded by company security programs, which allows us to use RPA features freely.
 </p>
 
+## How is the Signal Made?
+<p>
+   Original Plan: Use the autoencoder to detect whether or not the path of the signal 
+      is out of the ordinary.
+</p>
+
+<p>
+   Revised Plan: Using autoencoder takes up so much time, since we have to fit autoencoder to each and every stocks. 
+      Therefore, we are using band methodology. If the signal goes outside of the bollingerband, 
+      it is considered as "out of the ordinary". Result shows that the bollingerband methodology,
+      produces similar result for initial signal generation - even faster at some point. 
+      However, it does not provide long and stable signal like that of autoencoder. 
+   Since marketing looooves "MACHINE LEARNING", we will state that we are using AutoEncoder based signal generating method.
+</p>
+
 ## Pipeline
 <p>
 
