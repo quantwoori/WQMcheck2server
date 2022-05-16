@@ -84,13 +84,13 @@ class CheckData:
 
         self.wf.save(self.dpath)
 
-    def process_rpa_res(self, loc=r'C:\Users\Check\Documents\result.xlsx'):
+    def process_rpa_res(self, loc=r'C:\Users\Check\Documents\Quant_모니터링\result.xlsx'):
         d = pd.read_excel(loc)
 
 
 def main_database():
     # Data
-    xl = XLClean(r'C:/Users/Check/Documents/result.xlsx')
+    xl = XLClean(r'C:/Users/Check/Documents/Quant_모니터링/result.xlsx')
     d = xl.clean_column(xl.data, 2)
     d.date = d.date.apply(xl.clean_date)
     d.stock = d.stock.apply(xl.clean_stock)
